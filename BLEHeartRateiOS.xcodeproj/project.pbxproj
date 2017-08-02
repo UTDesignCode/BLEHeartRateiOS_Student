@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88B80D981F324E2300569654 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80D971F324E2300569654 /* main.m */; };
+		88B80D9B1F324E2300569654 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80D9A1F324E2300569654 /* AppDelegate.m */; };
+		88B80D9E1F324E2300569654 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80D9D1F324E2300569654 /* ViewController.m */; };
+		88B80DA11F324E2300569654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B80D9F1F324E2300569654 /* Main.storyboard */; };
+		88B80DA31F324E2300569654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B80DA21F324E2300569654 /* Assets.xcassets */; };
+		88B80DA61F324E2300569654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B80DA41F324E2300569654 /* LaunchScreen.storyboard */; };
+		88B80DB11F324E2300569654 /* BLEHeartRateiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80DB01F324E2300569654 /* BLEHeartRateiOSTests.m */; };
+		88B80DBC1F324E2300569654 /* BLEHeartRateiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80DBB1F324E2300569654 /* BLEHeartRateiOSUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88B80DAD1F324E2300569654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88B80D8B1F324E2200569654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88B80D921F324E2300569654;
+			remoteInfo = BLEHeartRateiOS;
+		};
+		88B80DB81F324E2300569654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88B80D8B1F324E2200569654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88B80D921F324E2300569654;
+			remoteInfo = BLEHeartRateiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88B80D931F324E2300569654 /* BLEHeartRateiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEHeartRateiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B80D971F324E2300569654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88B80D991F324E2300569654 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88B80D9A1F324E2300569654 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88B80D9C1F324E2300569654 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		88B80D9D1F324E2300569654 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		88B80DA01F324E2300569654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88B80DA21F324E2300569654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88B80DA51F324E2300569654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88B80DA71F324E2300569654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B80DAC1F324E2300569654 /* BLEHeartRateiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEHeartRateiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B80DB01F324E2300569654 /* BLEHeartRateiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEHeartRateiOSTests.m; sourceTree = "<group>"; };
+		88B80DB21F324E2300569654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B80DB71F324E2300569654 /* BLEHeartRateiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEHeartRateiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B80DBB1F324E2300569654 /* BLEHeartRateiOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEHeartRateiOSUITests.m; sourceTree = "<group>"; };
+		88B80DBD1F324E2300569654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88B80D901F324E2300569654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B80DA91F324E2300569654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B80DB41F324E2300569654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88B80D8A1F324E2200569654 = {
+			isa = PBXGroup;
+			children = (
+				88B80D951F324E2300569654 /* BLEHeartRateiOS */,
+				88B80DAF1F324E2300569654 /* BLEHeartRateiOSTests */,
+				88B80DBA1F324E2300569654 /* BLEHeartRateiOSUITests */,
+				88B80D941F324E2300569654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88B80D941F324E2300569654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88B80D931F324E2300569654 /* BLEHeartRateiOS.app */,
+				88B80DAC1F324E2300569654 /* BLEHeartRateiOSTests.xctest */,
+				88B80DB71F324E2300569654 /* BLEHeartRateiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88B80D951F324E2300569654 /* BLEHeartRateiOS */ = {
+			isa = PBXGroup;
+			children = (
+				88B80D991F324E2300569654 /* AppDelegate.h */,
+				88B80D9A1F324E2300569654 /* AppDelegate.m */,
+				88B80D9C1F324E2300569654 /* ViewController.h */,
+				88B80D9D1F324E2300569654 /* ViewController.m */,
+				88B80D9F1F324E2300569654 /* Main.storyboard */,
+				88B80DA21F324E2300569654 /* Assets.xcassets */,
+				88B80DA41F324E2300569654 /* LaunchScreen.storyboard */,
+				88B80DA71F324E2300569654 /* Info.plist */,
+				88B80D961F324E2300569654 /* Supporting Files */,
+			);
+			path = BLEHeartRateiOS;
+			sourceTree = "<group>";
+		};
+		88B80D961F324E2300569654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88B80D971F324E2300569654 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88B80DAF1F324E2300569654 /* BLEHeartRateiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				88B80DB01F324E2300569654 /* BLEHeartRateiOSTests.m */,
+				88B80DB21F324E2300569654 /* Info.plist */,
+			);
+			path = BLEHeartRateiOSTests;
+			sourceTree = "<group>";
+		};
+		88B80DBA1F324E2300569654 /* BLEHeartRateiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88B80DBB1F324E2300569654 /* BLEHeartRateiOSUITests.m */,
+				88B80DBD1F324E2300569654 /* Info.plist */,
+			);
+			path = BLEHeartRateiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88B80D921F324E2300569654 /* BLEHeartRateiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B80DC01F324E2300569654 /* Build configuration list for PBXNativeTarget "BLEHeartRateiOS" */;
+			buildPhases = (
+				88B80D8F1F324E2300569654 /* Sources */,
+				88B80D901F324E2300569654 /* Frameworks */,
+				88B80D911F324E2300569654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEHeartRateiOS;
+			productName = BLEHeartRateiOS;
+			productReference = 88B80D931F324E2300569654 /* BLEHeartRateiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88B80DAB1F324E2300569654 /* BLEHeartRateiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B80DC31F324E2300569654 /* Build configuration list for PBXNativeTarget "BLEHeartRateiOSTests" */;
+			buildPhases = (
+				88B80DA81F324E2300569654 /* Sources */,
+				88B80DA91F324E2300569654 /* Frameworks */,
+				88B80DAA1F324E2300569654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88B80DAE1F324E2300569654 /* PBXTargetDependency */,
+			);
+			name = BLEHeartRateiOSTests;
+			productName = BLEHeartRateiOSTests;
+			productReference = 88B80DAC1F324E2300569654 /* BLEHeartRateiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88B80DB61F324E2300569654 /* BLEHeartRateiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B80DC61F324E2300569654 /* Build configuration list for PBXNativeTarget "BLEHeartRateiOSUITests" */;
+			buildPhases = (
+				88B80DB31F324E2300569654 /* Sources */,
+				88B80DB41F324E2300569654 /* Frameworks */,
+				88B80DB51F324E2300569654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88B80DB91F324E2300569654 /* PBXTargetDependency */,
+			);
+			name = BLEHeartRateiOSUITests;
+			productName = BLEHeartRateiOSUITests;
+			productReference = 88B80DB71F324E2300569654 /* BLEHeartRateiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88B80D8B1F324E2200569654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Khan, Mohammad";
+				TargetAttributes = {
+					88B80D921F324E2300569654 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7ULFXL7397;
+						ProvisioningStyle = Automatic;
+					};
+					88B80DAB1F324E2300569654 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7ULFXL7397;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88B80D921F324E2300569654;
+					};
+					88B80DB61F324E2300569654 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7ULFXL7397;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88B80D921F324E2300569654;
+					};
+				};
+			};
+			buildConfigurationList = 88B80D8E1F324E2200569654 /* Build configuration list for PBXProject "BLEHeartRateiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88B80D8A1F324E2200569654;
+			productRefGroup = 88B80D941F324E2300569654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88B80D921F324E2300569654 /* BLEHeartRateiOS */,
+				88B80DAB1F324E2300569654 /* BLEHeartRateiOSTests */,
+				88B80DB61F324E2300569654 /* BLEHeartRateiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88B80D911F324E2300569654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B80DA61F324E2300569654 /* LaunchScreen.storyboard in Resources */,
+				88B80DA31F324E2300569654 /* Assets.xcassets in Resources */,
+				88B80DA11F324E2300569654 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B80DAA1F324E2300569654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B80DB51F324E2300569654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88B80D8F1F324E2300569654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B80D9E1F324E2300569654 /* ViewController.m in Sources */,
+				88B80D9B1F324E2300569654 /* AppDelegate.m in Sources */,
+				88B80D981F324E2300569654 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B80DA81F324E2300569654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B80DB11F324E2300569654 /* BLEHeartRateiOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B80DB31F324E2300569654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B80DBC1F324E2300569654 /* BLEHeartRateiOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88B80DAE1F324E2300569654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88B80D921F324E2300569654 /* BLEHeartRateiOS */;
+			targetProxy = 88B80DAD1F324E2300569654 /* PBXContainerItemProxy */;
+		};
+		88B80DB91F324E2300569654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88B80D921F324E2300569654 /* BLEHeartRateiOS */;
+			targetProxy = 88B80DB81F324E2300569654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88B80D9F1F324E2300569654 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88B80DA01F324E2300569654 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88B80DA41F324E2300569654 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88B80DA51F324E2300569654 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88B80DBE1F324E2300569654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88B80DBF1F324E2300569654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88B80DC11F324E2300569654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7ULFXL7397;
+				INFOPLIST_FILE = BLEHeartRateiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khan.BLEHeartRateiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88B80DC21F324E2300569654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7ULFXL7397;
+				INFOPLIST_FILE = BLEHeartRateiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khan.BLEHeartRateiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		88B80DC41F324E2300569654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7ULFXL7397;
+				INFOPLIST_FILE = BLEHeartRateiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khan.BLEHeartRateiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEHeartRateiOS.app/BLEHeartRateiOS";
+			};
+			name = Debug;
+		};
+		88B80DC51F324E2300569654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7ULFXL7397;
+				INFOPLIST_FILE = BLEHeartRateiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khan.BLEHeartRateiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEHeartRateiOS.app/BLEHeartRateiOS";
+			};
+			name = Release;
+		};
+		88B80DC71F324E2300569654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7ULFXL7397;
+				INFOPLIST_FILE = BLEHeartRateiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khan.BLEHeartRateiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BLEHeartRateiOS;
+			};
+			name = Debug;
+		};
+		88B80DC81F324E2300569654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7ULFXL7397;
+				INFOPLIST_FILE = BLEHeartRateiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khan.BLEHeartRateiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BLEHeartRateiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88B80D8E1F324E2200569654 /* Build configuration list for PBXProject "BLEHeartRateiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B80DBE1F324E2300569654 /* Debug */,
+				88B80DBF1F324E2300569654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88B80DC01F324E2300569654 /* Build configuration list for PBXNativeTarget "BLEHeartRateiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B80DC11F324E2300569654 /* Debug */,
+				88B80DC21F324E2300569654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88B80DC31F324E2300569654 /* Build configuration list for PBXNativeTarget "BLEHeartRateiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B80DC41F324E2300569654 /* Debug */,
+				88B80DC51F324E2300569654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88B80DC61F324E2300569654 /* Build configuration list for PBXNativeTarget "BLEHeartRateiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B80DC71F324E2300569654 /* Debug */,
+				88B80DC81F324E2300569654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88B80D8B1F324E2200569654 /* Project object */;
+}
