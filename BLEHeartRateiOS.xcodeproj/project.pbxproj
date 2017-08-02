@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		88B80D981F324E2300569654 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80D971F324E2300569654 /* main.m */; };
 		88B80D9B1F324E2300569654 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80D9A1F324E2300569654 /* AppDelegate.m */; };
-		88B80D9E1F324E2300569654 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80D9D1F324E2300569654 /* ViewController.m */; };
 		88B80DA11F324E2300569654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B80D9F1F324E2300569654 /* Main.storyboard */; };
 		88B80DA31F324E2300569654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B80DA21F324E2300569654 /* Assets.xcassets */; };
 		88B80DA61F324E2300569654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B80DA41F324E2300569654 /* LaunchScreen.storyboard */; };
 		88B80DB11F324E2300569654 /* BLEHeartRateiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80DB01F324E2300569654 /* BLEHeartRateiOSTests.m */; };
 		88B80DBC1F324E2300569654 /* BLEHeartRateiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80DBB1F324E2300569654 /* BLEHeartRateiOSUITests.m */; };
+		88B80DCB1F324E5F00569654 /* HeartRateDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B80DCA1F324E5F00569654 /* HeartRateDetailsTableViewController.m */; };
+		88B80DCF1F324F3300569654 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B80DCE1F324F3300569654 /* CoreBluetooth.framework */; };
+		88B80DD11F325B7400569654 /* LicenseAgreementBLEHeartRateiOS.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 88B80DD01F325B7400569654 /* LicenseAgreementBLEHeartRateiOS.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		88B80D971F324E2300569654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88B80D991F324E2300569654 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88B80D9A1F324E2300569654 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88B80D9C1F324E2300569654 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88B80D9D1F324E2300569654 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88B80DA01F324E2300569654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88B80DA21F324E2300569654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88B80DA51F324E2300569654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,11 @@
 		88B80DB71F324E2300569654 /* BLEHeartRateiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEHeartRateiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B80DBB1F324E2300569654 /* BLEHeartRateiOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEHeartRateiOSUITests.m; sourceTree = "<group>"; };
 		88B80DBD1F324E2300569654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B80DC91F324E5F00569654 /* HeartRateDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateDetailsTableViewController.h; sourceTree = "<group>"; };
+		88B80DCA1F324E5F00569654 /* HeartRateDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateDetailsTableViewController.m; sourceTree = "<group>"; };
+		88B80DCC1F324E7C00569654 /* UUIDList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UUIDList.h; sourceTree = "<group>"; };
+		88B80DCE1F324F3300569654 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		88B80DD01F325B7400569654 /* LicenseAgreementBLEHeartRateiOS.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = LicenseAgreementBLEHeartRateiOS.rtf; path = ../../LicenseAgreementBLEHeartRateiOS.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B80DCF1F324F3300569654 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				88B80DAF1F324E2300569654 /* BLEHeartRateiOSTests */,
 				88B80DBA1F324E2300569654 /* BLEHeartRateiOSUITests */,
 				88B80D941F324E2300569654 /* Products */,
+				88B80DCD1F324F3300569654 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +108,12 @@
 		88B80D951F324E2300569654 /* BLEHeartRateiOS */ = {
 			isa = PBXGroup;
 			children = (
+				88B80DD01F325B7400569654 /* LicenseAgreementBLEHeartRateiOS.rtf */,
 				88B80D991F324E2300569654 /* AppDelegate.h */,
 				88B80D9A1F324E2300569654 /* AppDelegate.m */,
-				88B80D9C1F324E2300569654 /* ViewController.h */,
-				88B80D9D1F324E2300569654 /* ViewController.m */,
+				88B80DCC1F324E7C00569654 /* UUIDList.h */,
+				88B80DC91F324E5F00569654 /* HeartRateDetailsTableViewController.h */,
+				88B80DCA1F324E5F00569654 /* HeartRateDetailsTableViewController.m */,
 				88B80D9F1F324E2300569654 /* Main.storyboard */,
 				88B80DA21F324E2300569654 /* Assets.xcassets */,
 				88B80DA41F324E2300569654 /* LaunchScreen.storyboard */,
@@ -138,6 +147,14 @@
 				88B80DBD1F324E2300569654 /* Info.plist */,
 			);
 			path = BLEHeartRateiOSUITests;
+			sourceTree = "<group>";
+		};
+		88B80DCD1F324F3300569654 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88B80DCE1F324F3300569654 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +268,7 @@
 			files = (
 				88B80DA61F324E2300569654 /* LaunchScreen.storyboard in Resources */,
 				88B80DA31F324E2300569654 /* Assets.xcassets in Resources */,
+				88B80DD11F325B7400569654 /* LicenseAgreementBLEHeartRateiOS.rtf in Resources */,
 				88B80DA11F324E2300569654 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B80D9E1F324E2300569654 /* ViewController.m in Sources */,
+				88B80DCB1F324E5F00569654 /* HeartRateDetailsTableViewController.m in Sources */,
 				88B80D9B1F324E2300569654 /* AppDelegate.m in Sources */,
 				88B80D981F324E2300569654 /* main.m in Sources */,
 			);

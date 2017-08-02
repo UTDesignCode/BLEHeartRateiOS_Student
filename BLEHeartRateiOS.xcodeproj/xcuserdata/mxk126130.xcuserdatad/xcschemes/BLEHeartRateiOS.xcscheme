@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "88B80D921F324E2300569654"
+               BuildableName = "BLEHeartRateiOS.app"
+               BlueprintName = "BLEHeartRateiOS"
+               ReferencedContainer = "container:BLEHeartRateiOS.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "88B80DAB1F324E2300569654"
+               BuildableName = "BLEHeartRateiOSTests.xctest"
+               BlueprintName = "BLEHeartRateiOSTests"
+               ReferencedContainer = "container:BLEHeartRateiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "88B80DB61F324E2300569654"
+               BuildableName = "BLEHeartRateiOSUITests.xctest"
+               BlueprintName = "BLEHeartRateiOSUITests"
+               ReferencedContainer = "container:BLEHeartRateiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "88B80D921F324E2300569654"
+            BuildableName = "BLEHeartRateiOS.app"
+            BlueprintName = "BLEHeartRateiOS"
+            ReferencedContainer = "container:BLEHeartRateiOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "88B80D921F324E2300569654"
+            BuildableName = "BLEHeartRateiOS.app"
+            BlueprintName = "BLEHeartRateiOS"
+            ReferencedContainer = "container:BLEHeartRateiOS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "88B80D921F324E2300569654"
+            BuildableName = "BLEHeartRateiOS.app"
+            BlueprintName = "BLEHeartRateiOS"
+            ReferencedContainer = "container:BLEHeartRateiOS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
