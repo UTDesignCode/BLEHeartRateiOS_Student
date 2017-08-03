@@ -25,7 +25,6 @@
  * and making them of CBUUID type so we can work with them in Core Bluetooth
  */
 @property(atomic, strong) NSArray *services;
-@property(atomic, strong) NSArray *characteristics;
 
 
 
@@ -49,6 +48,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sensorLocationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *batteryLevelLabel;
+
+/* Button property for scan start */
+@property (weak, nonatomic) IBOutlet UIButton *startScanButton;
 
 
 

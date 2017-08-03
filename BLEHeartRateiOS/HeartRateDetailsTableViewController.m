@@ -22,7 +22,7 @@
 @implementation HeartRateDetailsTableViewController
 
 
-
+// FULLY IMPLEMENTED :)
 - (void)viewDidLoad {
     
     
@@ -54,7 +54,8 @@
 
 
 
-/* Required Method. See Module 2 videos for more information
+/* FULLY IMPLEMENTED :)
+ * Required Method. See Module 2 videos for more information
  * about the method and the parameters involved.
  */
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
@@ -69,12 +70,7 @@
     } else if ([central state] == CBManagerStatePoweredOn) {
         
         
-        /* If state == on, then, we will use scan for services
-         * and the services we are scanning for are in the services
-         * array initialized earlier.
-         */
         NSLog(@"Bluetooth is powered on. Ready to connect.");
-        [central scanForPeripheralsWithServices:self.services options:nil];
         
         
     } else if ([central state] == CBManagerStateResetting) {
@@ -88,15 +84,18 @@
         
         NSLog(@"The app is not authorized to use Bluetooth Low Energy.");
         
+        
     } else if ([central state] == CBManagerStateUnknown) {
         
         
         NSLog(@"The current state is unknown. Please standby.");
         
+        
     } else if([central state] == CBManagerStateUnsupported) {
         
         
         NSLog(@"The platform is unsupported.");
+        
         
     }
     
@@ -105,7 +104,68 @@
 
 
 
+/* FULLY IMPLEMENTED :)
+ * This is our IBAction method for when our start button is tapped.
+ * What we want to do here is to see if Bluetooth is on, and if it is, the
+ * we initiate a scan for peripherals devices with the services we specify. If
+ * Bluetooth is off, then we will present and alert similar to way we did in 
+ * Module 1, App Lab 1: Text Input. For a refresher on presenting alerts, please
+ * see those videos.
+ */
+- (IBAction)whenStartScanButtonIsTapped:(id)sender {
+    
+    
+    /* If BLE powered on, start scan */
+    if ([self.deviceManager state] == CBManagerStatePoweredOn) {
+        
+        
+        /* Debugging statement for reference */
+        NSLog(@"Button Pressed, State On!");
+        
+        /* Scan method called */
+        [self.deviceManager scanForPeripheralsWithServices:self.services options:nil];
+        
+        
+    } else {
+    
+    
+    /* Debugging statement for reference */
+    NSLog(@"Button Pressed, State Off, Showing Alert!");
+    
+    
+    /* String variables for the various string parameters in the alert controllers */
+    NSString *alertTitleText = [NSString stringWithFormat:@"Unable to Get Data."];
+    NSString *alertMessageText = [NSString stringWithFormat:@"Please turn on Bluetooth and try again."];
+    NSString *actionTitleText = [NSString stringWithFormat:@"Got it!"];
+    
+    
+    /* Making an alert here with a title, message, and style */
+    UIAlertController *BLEOffAlert = [UIAlertController alertControllerWithTitle:alertTitleText
+                                                                              message:alertMessageText
+                                                                       preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    
+    /* Making an alert action with title, style and handle */
+    UIAlertAction *dismissBLEAlertAction = [UIAlertAction actionWithTitle:actionTitleText
+                                                                 style:UIAlertActionStyleDestructive
+                                                               handler:nil];
+    
+    /* Adding the dismissAlert action to our alert */
+    [BLEOffAlert addAction:dismissBLEAlertAction];
+    
+    
+    /* Presenting the BLEOffAlert with animation */
+    [self presentViewController:BLEOffAlert animated:YES completion:nil];
+    
+    }
+}
 
+
+
+
+
+
+// FULLY IMPLEMENTED :)
 - (void) centralManager:(CBCentralManager *)central
   didDiscoverPeripheral:(CBPeripheral *)peripheral
       advertisementData:(NSDictionary<NSString *,id> *)advertisementData
@@ -141,7 +201,7 @@
 
 
 
-
+// FULLY IMPLEMENTED :)
 - (void) centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
     
     
@@ -163,6 +223,11 @@
     
 }
 
+
+
+
+
+// FULLY IMPLEMENTED :)
 - (void) peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
     
     
@@ -199,6 +264,7 @@
 
 
 
+// NOT IMPLEMENTED YET!
 - (void) peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error {
     
     
@@ -226,45 +292,6 @@
         
         /* Step 2 + 3 for HRValueCharacteristic (heart rate value) */
         
-        if ([MSPCharacteristic.UUID isEqual:[CBUUID UUIDWithString:HRValueCharacteristic]]) {
-            
-            NSLog(@"HRValueCharacteristic Read Call");
-            [peripheral readValueForCharacteristic:MSPCharacteristic];
-            
-        }
-        
-        
-        
-        /* Step 2 + 3 for HRDateCharacteristic (sample date) */
-        
-        if ([MSPCharacteristic.UUID isEqual:[CBUUID UUIDWithString:HRDateCharacteristic]]) {
-            
-            NSLog(@"HRDateCharacteristic Read Call");
-            [peripheral readValueForCharacteristic:MSPCharacteristic];
-            
-        }
-        
-        
-        
-        /* Step 2 + 3 for HRSensorLocationCharacteristic (body sensor location) */
-        
-        if ([MSPCharacteristic.UUID isEqual:[CBUUID UUIDWithString:HRSensorLocationCharacteristic]]) {
-            
-            NSLog(@"HRSensorLocationCharacteristic Read Call");
-            [peripheral readValueForCharacteristic:MSPCharacteristic];
-            
-        }
-        
-        
-        
-        /* Step 2 + 3 for HRBatteryLevelCharacteristic (battery level) */
-        
-        if ([MSPCharacteristic.UUID isEqual:[CBUUID UUIDWithString:HRBatteryLevelCharacteristic]]) {
-            
-            NSLog(@"HRBatteryLevelCharacteristic Read Call");
-            [peripheral readValueForCharacteristic:MSPCharacteristic];
-            
-        }
         
         
         
@@ -273,7 +300,7 @@
 
 
 
-
+// NOT IMPLEMENTED YET!
 - (void) peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
     
     
@@ -318,24 +345,30 @@
         
         
         /* Step 1 */
-        NSData *rawData = characteristic.value;
+        
+        
+        
         
         
         /* Step 2, Part 1: Making unsigned 32 bit integer variable and writing
          * a debug statement for reference to see what the value of this int is
          * before converting rawData to intger and then storing that in rawInt
          */
-        uint32_t rawInt = 0;
-        NSLog(@"rawInt Value Before: %d", rawInt);
         
-        /* https://forums.developer.apple.com/thread/83827?sr=stream&ru=413442 */
-        [rawData getBytes:&rawInt length:sizeof(rawInt)];
-        NSLog(@"rawInt Value After: %d", rawInt);
+        
+        
+        
+        
+        
+        /* Step 2, Part 2: */
+       
+        
         
         
         /* Step 3 + 4 */
-        self.heartRateValue = [[NSNumber alloc]initWithUnsignedInt:rawInt];
-        [self.heartRateLabel setText:[self.heartRateValue stringValue]];
+        
+        
+        
         
     }
     
@@ -372,18 +405,18 @@
         
         
         /* Step 1 */
-        NSData *rawData = characteristic.value;
+        
         
         
         
         /* Step 2 + Debugging Statement for reference */
-        self.dateString = [[NSString alloc] initWithData:rawData encoding:NSUTF8StringEncoding];
-        NSLog(@"Date: %@",self.dateString);
+        
+        
         
         
         
         /* Step 3 */
-        self.dateLabel.text = self.dateString;
+        
         
     }
     
@@ -394,20 +427,6 @@
     if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:HRSensorLocationCharacteristic]]) {
         
         
-        /* Data Processing Workflow for a Text Value
-         * Based on the logging statement and the third party Bluetooth app, we know
-         * that our string is encoded in the UTF8String format. So our job is to take
-         * that raw data and turn it into a string for displaying.
-         *
-         * Step 1: Make an NSData variable to store the raw value
-         * Step 2: Turn this rawData into a UTF8String type and store this value
-         * Step 3: Set the label in the UI to this string
-         *
-         * NOTE: There might be other techniques do this workflow, this is just one way of
-         * peforming this operation.
-         */
-        
-        
         
         /* Log the UUID of the characteristic and it's raw value for reference */
         NSLog(@"Characteristic UUID:  %@", characteristic.UUID.UUIDString);
@@ -415,18 +434,7 @@
         
         
         
-        /* Step 1 */
-        NSData *rawData = characteristic.value;
-        
-        
-        /* Step 2 + Debugging Statement for reference */
-        self.sensorLocationString = [[NSString alloc] initWithData:rawData encoding:NSUTF8StringEncoding];
-        NSLog(@"Sensor Location: %@",self.sensorLocationString);
-        
-        
-        
-        /* Step 3 */
-        self.sensorLocationLabel.text = self.sensorLocationString;
+       
         
     }
     
@@ -442,19 +450,7 @@
         NSLog(@"Characteristic Value: %@", characteristic.value);
         
         
-        /* Step 1 */
-        NSData *rawData = characteristic.value;
         
-        
-        
-        /* Step 2 + Debugging Statement for reference */
-        self.batteryLevelString = [[NSString alloc] initWithData:rawData encoding:NSUTF8StringEncoding];
-        NSLog(@"Battery Level: %@",self.batteryLevelString);
-        
-        
-        
-        /* Step 3 */
-        self.batteryLevelLabel.text = self.batteryLevelString;
         
     }
     
